@@ -4,9 +4,19 @@
 
     <v-layout row wrap>
 
-      <v-flex xs-10>
+      <v-flex>
 
-        <v-carousel style="height: 350px">
+        <v-text-field
+          solo
+          label="Search"
+          append-icon="keyboard_voice"
+          prepend-icon="search"
+          class="mb-4"
+        >
+
+        </v-text-field>
+
+        <v-carousel style="height: 300px">
           <v-carousel-item v-for="(item,i) in items" v-bind:src="item.src" :key="i"></v-carousel-item>
         </v-carousel>
       </v-flex>
