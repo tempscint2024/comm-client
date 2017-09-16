@@ -2,7 +2,7 @@
   <v-app light>
 
     <v-navigation-drawer absolute persistent light v-model="drawer" overflow>
-      <v-toolbar flat class="transparent" v-if="authenticate">
+      <v-toolbar flat class="transparent" >
         <v-list class="pa-0" >
           <v-list-tile avatar>
             <v-list-tile-avatar>
@@ -14,7 +14,7 @@
           </v-list-tile>
         </v-list>
       </v-toolbar>
-      <v-list class="pt-0" dense v-else>
+      <v-list class="pt-0" dense>
         <v-divider></v-divider>
         <v-list-tile v-for="item in items" :key="item.title" @click="">
           <v-list-tile-action>
@@ -38,7 +38,13 @@
     </v-toolbar>
     <main>
 
-        <router-view></router-view>
+        <v-container fluid>
+
+          <router-view></router-view>
+
+        </v-container>
+
+
 
     </main>
   </v-app>
