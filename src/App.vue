@@ -51,7 +51,9 @@
         drawer: false,
         items: [
           { title: 'Home', icon: 'dashboard' },
-          { title: 'About', icon: 'question_answer' }
+          { title: 'About', icon: 'question_answer' },
+          { title: 'Service', icon: 'question_answer' },
+          { title: 'Help', icon: 'question_answer' }
         ],
         right: null,
         title: 'ShopIt',
