@@ -56,7 +56,7 @@
       return {
         drawer: false,
         items: [
-          { title: 'Home', icon: 'dashboard' },
+          { title: 'Home', icon: 'home' },
           { title: 'About', icon: 'question_answer' },
           { title: 'Service', icon: 'question_answer' },
           { title: 'Help', icon: 'question_answer' }

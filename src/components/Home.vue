@@ -76,13 +76,19 @@
 
 
 
-        <h6>Electronics</h6>
+
+
+        <v-card flat>
+          <v-card-text class="mt-4 mb-2 pa-1 pb-1 pt-3">
+            <h6>Electronics</h6>
+          </v-card-text>
+        </v-card>
 
         <slick ref="slick" :options="slickOptions">
 
 
-          <v-card v-for="(slickImage, i) in slickImages"  :key="i">
-            <v-card-media v-bind:src="slickImage.src" height="150px">
+          <v-card v-for="(slickImage, i) in slickImages"  :key="i" class="ma-1">
+            <v-card-media v-bind:src="slickImage.src" height="180px">
 
             </v-card-media>
 
@@ -93,10 +99,10 @@
               </div>
             </v-card-text>
 
-            <v-card-actions class="grey lighten-1">
-              <v-btn class="teal darken-1 white--text">
+            <v-card-actions class="teal darken-1">
+              <v-btn class="green lighten-2 white--text">
                 <v-icon left dark>add_shopping_cart</v-icon>
-                <v-icon left>monetization_on</v-icon> 420
+                <v-icon >monetization_on</v-icon> 420
               </v-btn>
 
 
