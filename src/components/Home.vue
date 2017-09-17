@@ -87,7 +87,7 @@
         <slick ref="slick" :options="slickOptions">
 
 
-          <v-card v-for="(slickImage, i) in slickImages"  :key="i" class="ma-1">
+          <v-card v-for="(slickImage, i) in slickImages"  :key="i" class="ma-1 elevation-4" style="cursor: pointer">
             <v-card-media v-bind:src="slickImage.src" height="180px">
 
             </v-card-media>
@@ -95,7 +95,7 @@
             <v-card-text class="blue-grey lighten-3">
               <div>
                 <div class=" mb-0">Sony IPX </div>
-                <div>Located two hours south of Sydney in the ...</div>
+                <div>Located two hours south of Sydney.</div>
               </div>
             </v-card-text>
 
