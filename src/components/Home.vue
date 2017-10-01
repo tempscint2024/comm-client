@@ -87,7 +87,11 @@
         <slick ref="slick" :options="slickOptions">
 
 
-          <v-card v-for="(slickImage, i) in slickImages"  :key="i" class="ma-1 elevation-4" style="cursor: pointer">
+          <v-card 
+          v-for="(slickImage, i) in slickImages"  :key="i" 
+          class="ma-1 elevation-3" 
+          style="cursor: pointer">
+          
             <v-card-media v-bind:src="slickImage.src" height="180px">
 
             </v-card-media>
@@ -129,6 +133,7 @@
     components: { Slick },
     data () {
       return {
+        productCardHovered: false,
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .   ex ea commodo consequat.',
         slickOptions: {
           slidesToShow: 4,
